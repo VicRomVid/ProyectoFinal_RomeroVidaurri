@@ -1,0 +1,29 @@
+/*CARRUSEL*/
+.carousel-item img {
+    height: 300px;
+}
+@media (min-width: 768px) {
+    #carouselExample {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    #carouselExample2 {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    #carouselExample3 {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+    
+.carousel-item img {
+    height: 350px;
+}
+

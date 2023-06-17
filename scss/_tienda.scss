@@ -1,0 +1,108 @@
+/*CARDS*/
+.padre-cards {
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/*CSS VANILLA*/
+/*.padre-cards__card {
+    width: 18rem;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.padre-cards__card h4, .padre-cards__card p {
+    color: $color-font;
+}
+
+.padre-cards__card button {
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}*/
+
+/*SASS ANIDACIÓN*/
+.padre-cards__card {
+    width: 18rem;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    
+    h4, p {
+    color: $color-font;
+    }
+
+    button {
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+        font-weight: 700;
+    }
+}
+
+.padre-cards__card--oferta {
+    background-color: $bc-highlights;
+}
+
+.padre-cards__card:hover {
+    transform: scale(1.1);
+    transition: ease .4s;
+}
+
+/*FILTRO PRODUCTOS*/
+.container-labels {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.container-labels label {
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: $bc-highlights;
+}
+
+.container-labels label:hover {
+    background-color: #e2ad32;
+    transition: ease .6s;
+}
+
+/*OCULTAR RADIO*/
+#playeras, #gorras, #aretes, #todos {
+    display: none;
+}
+
+.playeras, .gorras, .aretes {
+    display: none;
+}
+
+#playeras:checked ~ .padre-cards .playeras,
+#gorras:checked ~ .padre-cards .gorras,
+#aretes:checked ~ .padre-cards .aretes {
+    display: flex;
+}
+
+#todos:checked ~ .padre-cards .playeras,
+#todos:checked ~ .padre-cards .gorras, 
+#todos:checked ~ .padre-cards .aretes {
+    display: flex;
+}
+
+.padre-cards {
+    margin: 0 auto;
+}
+

@@ -1,0 +1,409 @@
+@charset "UTF-8";
+/*PALETA DE COLORES*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #577590;
+  font-family: "Roboto", sans-serif;
+}
+
+/*VANILLA CSS*/
+/*ul {
+    list-style: none;
+}
+
+ul li a:hover {
+    background-color: #f94144;
+    transition: ease 1.6s;
+}*/
+/*SASS ANIDACIÓN*/
+ul {
+  list-style: none;
+}
+ul li a:hover {
+  background-color: #f94144;
+  transition: ease 1.6s;
+}
+
+header {
+  background-color: #f8961e;
+  padding: 1px 0;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header__logo {
+  width: 80px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 30px 0;
+  color: #fff;
+}
+
+/*BANNER*/
+.banner {
+  background-image: url("../img/bird_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*PARALLAX*/
+  background-attachment: fixed;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*BANNER TIRANOS Y FOOTER*/
+.tirania {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #e2ad32;
+  margin-top: 40px;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.padre-redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .padre-redes {
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    right: 2%;
+  }
+  .titulo-redes {
+    display: none;
+  }
+}
+.redes {
+  width: 35px;
+}
+
+/*BOOTSTRAP*/
+.padre-banners {
+  margin: 0 auto;
+}
+
+/*CSS VANILLA*/
+/*.hijo-banners {
+    text-align: center;
+}
+
+.hijo-banners:hover {
+    transform: scale(1.1);
+    transition: ease .4s;
+}*/
+/*SASS ANIDACIÓN &*/
+.hijo-banners {
+  text-align: center;
+}
+.hijo-banners:hover {
+  transform: scale(1.1);
+  transition: ease 0.4s;
+}
+
+header nav {
+  width: 100%;
+}
+
+h4 {
+  color: #fff;
+}
+
+/*CARDS*/
+.padre-cards {
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/*CSS VANILLA*/
+/*.padre-cards__card {
+    width: 18rem;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.padre-cards__card h4, .padre-cards__card p {
+    color: $color-font;
+}
+
+.padre-cards__card button {
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}*/
+/*SASS ANIDACIÓN*/
+.padre-cards__card {
+  width: 18rem;
+  -webkit-box-shadow: 0px 0px 17px 0px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 0px 17px 0px rgb(255, 255, 255);
+  box-shadow: 0px 0px 17px 0px rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.padre-cards__card h4, .padre-cards__card p {
+  color: #fff;
+}
+.padre-cards__card button {
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.padre-cards__card--oferta {
+  background-color: #f94144;
+}
+
+.padre-cards__card:hover {
+  transform: scale(1.1);
+  transition: ease 0.4s;
+}
+
+/*FILTRO PRODUCTOS*/
+.container-labels {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.container-labels label {
+  cursor: pointer;
+  padding: 8px 15px;
+  background-color: #f94144;
+}
+
+.container-labels label:hover {
+  background-color: #e2ad32;
+  transition: ease 0.6s;
+}
+
+/*OCULTAR RADIO*/
+#playeras, #gorras, #aretes, #todos {
+  display: none;
+}
+
+.playeras, .gorras, .aretes {
+  display: none;
+}
+
+#playeras:checked ~ .padre-cards .playeras,
+#gorras:checked ~ .padre-cards .gorras,
+#aretes:checked ~ .padre-cards .aretes {
+  display: flex;
+}
+
+#todos:checked ~ .padre-cards .playeras,
+#todos:checked ~ .padre-cards .gorras,
+#todos:checked ~ .padre-cards .aretes {
+  display: flex;
+}
+
+.padre-cards {
+  margin: 0 auto;
+}
+
+/*CARRUSEL*/
+.carousel-item img {
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  #carouselExample {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  #carouselExample2 {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  #carouselExample3 {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.carousel-item img {
+  height: 350px;
+}
+
+/*CASS VANILLA*/
+/*NEWSLETTER*/
+/*.newsletter-subscribe {
+    color:#313437;
+    background-color:#fff;
+    padding:50px 0;
+    }
+
+    .newsletter-subscribe p {
+    color:#7d8285;
+    line-height:1.5;
+    }
+
+    .newsletter-subscribe h2 {
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:25px;
+    line-height:1.5;
+    padding-top:0;
+    margin-top:0;
+    color:inherit;
+    }
+
+    .newsletter-subscribe .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto 25px;
+    }
+
+    .newsletter-subscribe .intro p {
+    margin-bottom:35px;
+    }
+
+    .newsletter-subscribe form {
+    justify-content:center;
+    }
+
+    .newsletter-subscribe form .form-control {
+    background:#eff1f4;
+    border:none;
+    border-radius:3px;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+    text-indent:9px;
+    height:45px;
+    margin-right:10px;
+    min-width:250px;
+    }
+
+    .newsletter-subscribe form .btn {
+    padding:16px 32px;
+    border:none;
+    background:none;
+    box-shadow:none;
+    text-shadow:none;
+    opacity:0.9;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:13px;
+    letter-spacing:0.4px;
+    line-height:1;
+    }
+
+    .newsletter-subscribe form .btn:hover {
+    opacity:1;
+    }
+
+    .newsletter-subscribe form .btn:active {
+    transform:translateY(1px);
+    }
+
+    .newsletter-subscribe form .btn-primary {
+    background-color:#055ada !important;
+    color:#fff;
+    outline:none !important;
+    }*/
+/*SASS ANIDACIÓN*/
+.newsletter-subscribe {
+  color: #313437;
+  background-color: #fff;
+  padding: 50px 0;
+}
+.newsletter-subscribe p {
+  color: #7d8285;
+  line-height: 1.5;
+}
+.newsletter-subscribe h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  padding-top: 0;
+  margin-top: 0;
+  color: inherit;
+}
+.newsletter-subscribe .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 25px;
+}
+.newsletter-subscribe .intro p {
+  margin-bottom: 35px;
+}
+.newsletter-subscribe form {
+  justify-content: center;
+}
+.newsletter-subscribe form .form-control {
+  background: #eff1f4;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 9px;
+  height: 45px;
+  margin-right: 10px;
+  min-width: 250px;
+}
+.newsletter-subscribe form .btn {
+  padding: 16px 32px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+}
+.newsletter-subscribe form .btn:hover {
+  opacity: 1;
+}
+.newsletter-subscribe form .btn:active {
+  transform: translateY(1px);
+}
+.newsletter-subscribe form .btn-primary {
+  background-color: #055ada !important;
+  color: #fff;
+  outline: none !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

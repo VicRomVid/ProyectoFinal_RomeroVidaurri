@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bc-body;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*VANILLA CSS*/
+/*ul {
+    list-style: none;
+}
+
+ul li a:hover {
+    background-color: #f94144;
+    transition: ease 1.6s;
+}*/
+
+/*SASS ANIDACIÓN*/
+ul {
+    list-style: none;
+    
+    li a:hover {
+    background-color: #f94144;
+    transition: ease 1.6s;
+    }
+}
+
+header {
+    background-color: $bc-header;
+    padding: 1px 0;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header__logo {
+    width: 80px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 30px 0;
+    color: $color-font;
+}
+
+/*BANNER*/
+.banner {
+    background-image: url('../img/bird_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*PARALLAX*/
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*BANNER TIRANOS Y FOOTER*/
+.tirania {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: $bc-footer;
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    color: $color-font;
+}
+
+.padre-redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .padre-redes {
+        flex-direction: column;
+        position: fixed;
+        top: 40%;
+        right: 2%;
+    }
+
+    .titulo-redes {
+        display: none;
+    }
+}
+
+.redes {
+    width: 35px;
+}
+
+/*BOOTSTRAP*/
+.padre-banners {
+    margin: 0 auto;
+}
+
+/*CSS VANILLA*/
+/*.hijo-banners {
+    text-align: center;
+}
+
+.hijo-banners:hover {
+    transform: scale(1.1);
+    transition: ease .4s;
+}*/
+
+/*SASS ANIDACIÓN &*/
+.hijo-banners {
+    text-align: center;
+    
+    &:hover {
+    transform: scale(1.1);
+    transition: ease .4s;
+    }
+}
+
+header nav {
+    width: 100%;
+}
+
+h4 {
+    color: $color-font;
+}
+
